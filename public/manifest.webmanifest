@@ -1,0 +1,10 @@
+{
+  "name": "Caracterización Colombia Solar",
+  "short_name": "Colombia Solar",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0b4ea2",
+  "lang": "es-CO",
+  "icons": [{ "src": "/logos/logo-colombia-solar.png", "sizes": "1024x306", "type": "image/png" }]
+}

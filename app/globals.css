@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face { font-family: 'Carlito'; src: url('/fonts/Carlito-Regular.ttf') format('truetype'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Carlito'; src: url('/fonts/Carlito-Bold.ttf') format('truetype'); font-weight: 700; font-display: swap; }
+
+html { -webkit-text-size-adjust: 100%; }
+body { @apply bg-slate-50 text-tinta antialiased; }
+a { @apply text-marca underline-offset-2; }
+a:hover { @apply text-marca-oscuro underline; }
+
+@layer components {
+  .btn { @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-lg px-4 text-base font-bold transition disabled:cursor-not-allowed disabled:opacity-50; }
+  .btn-primario { @apply btn bg-marca text-white hover:bg-marca-oscuro hover:no-underline hover:text-white; }
+  .btn-secundario { @apply btn border border-slate-300 bg-white text-tinta hover:bg-slate-50 hover:no-underline; }
+  .btn-peligro { @apply btn bg-red-700 text-white hover:bg-red-800; }
+  .btn-exito { @apply btn bg-verde text-white hover:bg-green-700; }
+  .campo-input { @apply block min-h-[48px] w-full rounded-lg border border-slate-300 bg-white px-3 text-base focus:border-marca focus:outline-none focus:ring-2 focus:ring-marca/30; }
+  .tarjeta { @apply rounded-xl border border-slate-200 bg-white p-4; }
+  .etiqueta { @apply mb-1 block text-sm font-bold text-slate-800; }
+  .tabla { @apply w-full border-collapse text-sm; }
+  .tabla th { @apply border-b-2 border-slate-300 px-2 py-2 text-left font-bold text-slate-700; }
+  .tabla td { @apply border-b border-slate-200 px-2 py-2 align-top; }
+}

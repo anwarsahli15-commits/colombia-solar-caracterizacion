@@ -1,0 +1,15 @@
+project_id = "colombia-solar-caracterizacion"
+
+[api]
+schemas = ["public"]
+max_rows = 1000
+
+[auth]
+site_url = "https://REEMPLAZAR-CON-DOMINIO-VERCEL"
+enable_signup = false
+
+[auth.email]
+enable_signup = false
+
+[storage]
+file_size_limit = "50MiB"

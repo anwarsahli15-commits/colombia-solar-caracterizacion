@@ -1,0 +1,35 @@
+{
+  "name": "colombia-solar-caracterizacion",
+  "version": "0.1.0",
+  "private": true,
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/",
+    "verificar-proyecto": "node scripts/verificar-proyecto.mjs",
+    "db:push": "node scripts/verificar-proyecto.mjs && supabase db push"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.5.2",
+    "@supabase/supabase-js": "^2.46.1",
+    "idb-keyval": "^6.2.1",
+    "next": "14.2.18",
+    "papaparse": "^5.4.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.0",
+    "@types/papaparse": "^5.3.15",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5.6.3"
+  }
+}

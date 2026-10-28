@@ -1,0 +1,14 @@
+{
+  "name": "colombia-solar-exportador",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": { "start": "node exportar.mjs", "test": "node --test ../tests/" },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.46.1",
+    "archiver": "^7.0.1",
+    "exceljs": "^4.4.0",
+    "pdf-lib": "^1.17.1",
+    "proj4": "^2.12.1"
+  }
+}
